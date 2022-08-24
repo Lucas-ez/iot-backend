@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(24, 24, 24) 100%);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+header, main {
+  width: 100%;
+  max-width: 1180px;
+}
+
+.logo {
+  font-family: 'Smooch', cursive;
+  font-size: 64px;
+  font-weight: lighter;
+  user-select: none;
+  margin-block: 2rem;
+  padding-inline: 2rem;
+}
+
+.form_container {
+  display: flex;
+  justify-content: center;
+}
+
+.form_log-in {
+  width: 100%;
+  max-width: 600px;
+
+  padding: 4rem 5rem; 
+  border-radius: 6px;
+  border: 1px solid rgb(210, 210, 210); 
+
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.campo{
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(210, 210, 210);
+  color: white;
+  font-size: 1.2em;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.input {
+  height: 3em;
+}
+
+.button {
+  width: 6em;
+  height: 3em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.error {
+  width: 100%;
+}
+
+.session {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 5%;
+}
+
+.session div {
+  font-size: 1.2em;
+}
+
+.session .nombre {
+  font-style: italic;
+}
+
+.session svg {
+  background-color: rgb(206, 206, 206);
+  height: 1.2rem;
+  margin-left: 0.5rem;
+
+  padding: 6px;
+  border-radius: 30%;
+}
+
+.novedades-container {
+  margin-top: 40px;
+  margin-inline: 5%;
+}
+
+.novedades-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgb(206, 206, 206);
+  color: black;
+ 
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.2rem;
+}
+
+.novedades-container .table {
+  width: 100%;
+  border-collapse: collapse; 
+  border-spacing: 0; 
+  border: 1px solid rgb(210, 210, 210);
+
+  font-size: 1rem;
+}
+
+.propiedades {
+  background-color: rgb(210, 210, 210);
+  color: black;
+  font-size: 1.2rem;
+}
+
+.propiedades th {
+  text-align: left;
+  padding: 2px;
+}
+
+.propiedades .id {
+  width: 2rem;
+  text-align: center;
+}
+
+.id-body {
+  text-align: center;
+  font-weight: bold;
+}
+
+.propiedades .acciones {
+  width: 131px;
+}
+
+.acciones-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
