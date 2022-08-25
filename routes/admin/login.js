@@ -25,9 +25,8 @@ router.post('/', async (req, res, next) =>{
       req.session.id_usuario = userData.id
       req.session.nombre = userData.user
 
-      
-      res.render('admin/login', { error: '' + res.json(userData)});
-      // res.redirect('/admin/novedades');
+      console.log(userData)
+      res.redirect('/admin/novedades');
     } else {
       res.render('admin/login', { error: 'Usuario o contraseña incorrectos'});
     }
