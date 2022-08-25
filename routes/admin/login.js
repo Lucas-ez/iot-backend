@@ -20,13 +20,13 @@ router.post('/', async (req, res, next) =>{
     
     var userData = await usuariosModel.getUserByUserAndPassword(user, password);
     
+    res.render('admin/login', { error: '' + res.json(userData)});
     if (userData != undefined) {
       
       req.session.id_usuario = userData.id
       req.session.nombre = userData.user
 
       
-      res.render('admin/login', { error: '' + res.json(userData)});
       // res.redirect('/admin/novedades');
     } else {
       res.render('admin/login', { error: 'Usuario o contraseña incorrectos'});
